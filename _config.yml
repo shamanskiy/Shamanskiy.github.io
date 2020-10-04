@@ -16,11 +16,15 @@ remote_theme: hydecorp/hydejack@v9.0.4
 #minimal_mistakes_skin  : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
+title: CodeThatMath
+lang: en
+description: A blog about math and programming
 url: https://codethatmath.com
 baseurl: ''
+copyright: © 2020. All rights reserved.
 
 accent_image: https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f02.jpg
-accent_color: rgb(0,255,0) # hero color also (if no image provided)
+accent_color: rgb(0,79,184) # hero color also (if no image provided)
 
 font:         Noto Sans, Helvetica, Arial, sans-serif
 font_heading: Lato, Helvetica, Arial, sans-serif
@@ -48,6 +52,15 @@ defaults:
     values:
       comments: true
 
+menu:
+  - title: All posts
+    url:   /posts/
+  - title: About
+    url:   /about/
+
+paginate:      10
+paginate_path: '/:num/'
+
 
 
 
@@ -56,6 +69,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
