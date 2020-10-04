@@ -11,73 +11,57 @@
 # Theme Settings
 #theme: minima
 #theme                  : "minimal-mistakes-jekyll"
-remote_theme: "mmistakes/minimal-mistakes@4.20.1"
-minimal_mistakes_skin  : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+#remote_theme: "mmistakes/minimal-mistakes@4.20.1"
+remote_theme: hydecorp/hydejack@v9.0.4
+#minimal_mistakes_skin  : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Code That Math"
-title_separator          : "|"
-subtitle                 : "Implementing mathematics since 2010" 
-name                     : "Alexander Shamanskiy"
-description              : "A blog about programming for mathematicians and mathematics for programmers. Examples in C++ and MatLab."
-url                      : "https://codethatmath.com"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "shamanskiy/shamanskiy.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-#breadcrumbs            : true # true, false (default)
-words_per_minute         : 200
-comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
-  disqus:
-    shortname            : "codethatmath" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-  utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
-  staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
-reCaptcha:
-  siteKey                :
-  secret                 :
-atom_feed:
-  path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
-algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
-google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-yandex_site_verification :
-naver_site_verification  :
+title: CodeThatMath
+lang: en
+description: A blog about math and programming
+url: https://codethatmath.com
+baseurl: ''
+copyright: © 2020. All rights reserved.
 
+accent_image: https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f02.jpg
+accent_color: rgb(0,79,184) # hero color also (if no image provided)
+
+font:         Noto Sans, Helvetica, Arial, sans-serif
+font_heading: Lato, Helvetica, Arial, sans-serif
+google_fonts: Lato:400|Noto+Sans:400,400i,700,700i
+
+author:
+  name:  Alexander Shamanskiy
+  email: shamanskiy@codethatmath.com
+  about: |
+    Hi, I'm Alex, a mathematician/software engineer. I like finding new ways to ...
+  picture:  https://codethatmath.s3.eu-central-1.amazonaws.com/autor_image.jpg
+  social:
+    github: shamanskiy
+    Linkedin: https://www.linkedin.com/in/shamanskiy
+    researchgate: https://www.researchgate.net/profile/Alexander_Shamanskiy
+    email: shamanskiy@codethatmath.com
+
+disqus: codethatmath
+
+google-analytics: UA-179576532-1
 
 defaults:
-  # _posts
   - scope:
-      path: ""
       type: posts
     values:
-      show_date: true
-      read_time: true
       comments: true
+
+menu:
+  - title: All posts
+    url:   /posts/
+  - title: About
+    url:   /about/
+
+paginate:      10
+paginate_path: '/:num/'
+
+
 
 
 # Build settings
@@ -85,6 +69,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
