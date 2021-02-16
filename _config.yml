@@ -9,11 +9,7 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Theme Settings
-#theme: minima
-#theme                  : "minimal-mistakes-jekyll"
-#remote_theme: "mmistakes/minimal-mistakes@4.20.1"
 remote_theme: hydecorp/hydejack@v9.0.5
-#minimal_mistakes_skin  : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 title: CodeThatMath
@@ -21,7 +17,7 @@ lang: en
 description: A blog about math and programming
 url: https://codethatmath.com
 baseurl: ''
-copyright: © 2020. All rights reserved.
+copyright: © 2021. All rights reserved.
 
 accent_image: https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f02.jpg
 accent_color: rgb(0,79,184) # hero color also (if no image provided)
@@ -41,8 +37,6 @@ author:
     linkedin: shamanskiy
     researchgate: https://www.researchgate.net/profile/Alexander_Shamanskiy
     email: shamanskiy@codethatmath.com
-
-disqus: codethatmath
 
 google_analytics: UA-179576532-1
 

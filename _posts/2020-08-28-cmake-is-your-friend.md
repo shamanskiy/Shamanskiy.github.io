@@ -3,9 +3,6 @@ layout: post
 title:  "CMake is your friend"
 date:   2020-08-28 21:12:52 +0200
 categories: [cmake, c++]
-comments: true
-related_posts:
-  - _posts/2020-08-27-welcome-to-jekyll.md
 image:
   path: https://codethatmath.s3.eu-central-1.amazonaws.com/cmake_is_your_friend3.svg
 ---
