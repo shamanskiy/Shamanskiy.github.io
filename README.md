@@ -13,6 +13,7 @@ To host this blog locally, you will need the following:
 2. Install Bundler:
 ```
 gem install bundler
+bundle install
 ```
 3. Install the GitHub Pages gem (comes with Jekyll included):
 ```
