@@ -19,8 +19,11 @@ url: https://codethatmath.com
 baseurl: ''
 copyright: © 2021. All rights reserved.
 
-accent_image: https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f02.jpg
-accent_color: rgb(0,79,184) # hero color also (if no image provided)
+accent_image: Hero_AbstractScreen.svg
+image.overlay: false
+
+#accent_image: https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f02.jpg
+accent_color: rgb(255,0,0) #rgb(0,79,184) # hero color also (if no image provided)
 
 font:         Noto Sans, Helvetica, Arial, sans-serif
 font_heading: Lato, Helvetica, Arial, sans-serif
@@ -51,6 +54,12 @@ menu:
     url:   /posts/
   - title: About
     url:   /about/
+
+legal:
+  - title: Impress
+    url:  /posts/
+  - title: Cookies Policy
+    url:  /about/
 
 paginate:      10
 paginate_path: '/:num/'
