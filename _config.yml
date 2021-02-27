@@ -19,11 +19,12 @@ url: https://codethatmath.com
 baseurl: ''
 copyright: © 2021. All rights reserved.
 
-accent_image: Hero_AbstractScreen.svg
+accent_image: https://codethatmath.s3.eu-central-1.amazonaws.com/Hero.png
 image.overlay: false
 
 #accent_image: https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f02.jpg
-accent_color: rgb(255,0,0) #rgb(0,79,184) # hero color also (if no image provided)
+accent_color: rgb(154,207,254) #rgb(0,79,184) # hero color also (if no image provided)
+
 
 font:         Noto Sans, Helvetica, Arial, sans-serif
 font_heading: Lato, Helvetica, Arial, sans-serif
@@ -48,6 +49,7 @@ defaults:
       type: posts
     values:
       comments: true
+      invert_sidebar: true
 
 menu:
   - title: All posts
