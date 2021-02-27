@@ -1,9 +1,7 @@
 ---
 layout: list
-title: Posts
+title: All posts
 permalink: /posts/
 grouped: true
-description: bla bla Posts
+#description: bla bla Posts
 ---
-
-Many buity posts
