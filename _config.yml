@@ -19,14 +19,13 @@ url: https://codethatmath.com
 baseurl: ''
 copyright: © 2021. All rights reserved.
 
-accent_image: "hero.png"
-#accent_image: https://codethatmath.s3.eu-central-1.amazonaws.com/style-images/hero-blackTriangles.png
+accent_image: https://codethatmath.s3.eu-central-1.amazonaws.com/style-images/hero-blackTriangles.png
 accent_color: rgb(103,107,254) 
 
 
 font:         Noto Sans, Helvetica, Arial, sans-serif
 font_heading: Lato, Helvetica, Arial, sans-serif
-google_fonts: Lato:00|Noto+Sans:400,400i,700,700i
+google_fonts: Lato:300|Noto+Sans:400,400i,700,700i
 
 author:
   name:  Alexander Shamanskiy
@@ -45,7 +44,6 @@ defaults:
       type: posts
     values:
       comments: true
-      invert_sidebar: true
 
 menu:
   - title: All posts
@@ -56,8 +54,6 @@ menu:
 legal:
   - title: Disclaimer
     url:  /disclaimer/
-#  - title: Cookies Policy
-#    url:  /about/
 
 paginate:      10
 paginate_path: '/:num/'
