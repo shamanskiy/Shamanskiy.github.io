@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Bla bla bla this my about section.
+Hiya, my name is Alex
