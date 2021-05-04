@@ -1,30 +1,83 @@
 ---
 layout: post
-title:  "Welcome to OpenGL"
+title:  "Learning OpenGL: what to expect?"
 date:   2021-04-30 21:12:52 +0200
 categories: [opengl, beginner]
 image:
   path: local/Hero_image.png
 ---
 
-Not so long ago, I've decided to dip my toe in computer graphics. As many of us, I encounter it indirectly pretty much everywhere - games, 3D modeling apps, Hollywood blockbusters to name a few - so you could say that I have a lot of experience with computer graphics. But I wanted to look under the hood, I wanted to follow the way of a triangle as it turns from numbers in a file to a 3D model on my screen. I knew that OpenGL was somehow involved, so I've started to learn it. Below are my progress so far and my first impression of OpenGL.
+Not so long ago, I've decided to dip my toe in computer graphics. As many of us, I deal with it indirectly pretty much everywhere - games and Hollywood blockbusters to name a few - so you could say that I have a lot of experience with computer graphics. But I wanted to look under the hood, I wanted to follow the way of a triangle as it turns from numbers in a file to a 3D model on my screen. I knew that OpenGL was somehow involved, so I've begun to study it. In this post, I want to describe my experience so far and what one can expect when starting to learn OpenGL.
 
-TL; DR;
+TL;DR
+-----
 - 90% of OpenGL programming is about passing data to the GPU
-- another 10% is shader programming, which is pure linear algebra and really fun
-- super interesting: real-time graphics
+- another 10% is shader programming, which is pure linear algebra
+- these 10% are really fun!
 
 OpenGL setup...
 ---------
 is brutal. As it turns out, one doesn't simply start to write shaders. Instead, you first need to set up the environment (GLEW, GLFW). Then you need to write about that much code to produce a simple black screen. 
 
 ```c++
-std::cout << "Opengl window code";
+#include <iostream>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+
+int main() 
+{
+    if (!glfwInit())
+    {
+        std::cout << "Failed to initialize GLFW\n";
+        return -1;
+    }
+
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glewExperimental = GL_TRUE;
+
+    GLFWwindow* window = glfwCreateWindow(800, 600, "My first OpenGL window", nullptr, nullptr);
+    if (!window) {
+
+        std::cout << "Failed to create a GLFW window\n";
+        glfwTerminate();
+        return -1;
+    }
+    glfwMakeContextCurrent(window);
+
+    if (glewInit() != GLEW_OK) {
+        std::cout << "Failed to initialize GLEW\n";
+        return -1;
+    }
+
+    while(!glfwWindowShouldClose(window)) 
+    {
+        glfwPollEvents();
+
+        glClear(GL_COLOR_BUFFER_BIT);
+
+        glfwSwapBuffers(window);
+    }
+
+    glfwDestroyWindow(window);
+    glfwTerminate();
+}
 ```
 
+    // Try to initialize GLFW. GLFW (Graphics Library Framework) is a utility library
+    // that communicates with the operation system and provides the context for OpenGL to run it.
+    // Essentially, it creates a window and processes mouse and keyboard input.
+    // Define what version and components of OpenGL we want to use.
+    // Try to initialize GLEW. GLEW (OpenGL Extension Wrangler Library) adapts OpenGL to your
+    // OS and hardware. For all intents and purposes, you can of GLEW and OpenGL as the same.
+    // An infinite loop that runs until you click on the window's close button. 
+    // In each iteration, 
+    // Here is where the magic happens.
 Here, we initialize OpenGL/GLEW, we create GLFW context that handle the window and input and enter an infinite loop where we repeatedly color the window black. The result is impressive:
 
-![Simple black window](placeholder.png)
+![Simple black window](/local/first_screen.png){: width="400"}
 
 If you want to actually draw something, you can start with a single triangle. Here is the code. 
 
