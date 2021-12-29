@@ -7,3 +7,7 @@ researchgate:
   name: ResearchGate
   icon: icon-researchgate
   prepend: "https://www.researchgate.net/profile/"
+
+medium:
+  name: Medium
+  icon: icon-medium

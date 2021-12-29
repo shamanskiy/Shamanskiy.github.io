@@ -32,6 +32,8 @@ author:
   email: shamanskiy@codethatmath.com
   #picture:  https://codethatmath.s3.eu-central-1.amazonaws.com/autor_image.jpg
   social:
+    twitter: herr_shamanskiy
+    medium: https://shamanskiy.medium.com
     github: shamanskiy
     linkedin: shamanskiy
     researchgate: Alexander_Shamanskiy
@@ -57,8 +59,6 @@ legal:
 
 paginate:      10
 paginate_path: '/:num/'
-
-
 
 
 # Build settings

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Welcome to OpenGL"
-date:   2021-04-30 21:12:52 +0200
+title:  "Welcome to OpenGL (draft)"
+#date:   2021-04-30 21:12:52 +0200
 categories: [opengl, beginner]
 image:
   path: local/Hero_image.png
