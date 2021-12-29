@@ -14,12 +14,12 @@ remote_theme: hydecorp/hydejack@v9.0.5
 # Site Settings
 title: CodeThatMath
 lang: en
-description: Explore complex topics through practice and common sense
+description: Blog about coding, geometry and graphics
 url: https://codethatmath.com
 baseurl: ''
 copyright: © 2021. All rights reserved.
 
-accent_image: https://codethatmath.s3.eu-central-1.amazonaws.com/style-images/hero-blackTriangles.png
+accent_image: /assets/images/hero-blackTriangles.png
 accent_color: rgb(103,107,254) 
 
 

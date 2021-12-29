@@ -4,7 +4,7 @@ title:  "Welcome to OpenGL (draft)"
 #date:   2021-04-30 21:12:52 +0200
 categories: [opengl, beginner]
 image:
-  path: local/Hero_image.png
+  path: assets/images/welcome-to-opengl/Hero_image.png
 ---
 
 Not so long ago, I've decided to dip my toe in computer graphics. As many of us, I encounter it indirectly pretty much everywhere - games, 3D modeling apps, Hollywood blockbusters to name a few - so you could say that I have a lot of experience with computer graphics. But I wanted to look under the hood, I wanted to follow the way of a triangle as it turns from numbers in a file to a 3D model on my screen. I knew that OpenGL was somehow involved, so I've started to learn it. Below are my progress so far and my first impression of OpenGL.
@@ -65,14 +65,14 @@ Another cool part of shader programming is how it completely demystifies the
 ```
 Of course, this doesn't take into account shadows that different part of the tree throw on other parts of the tree. But still, the effect is so cool. And is was just one line.
 
-![Full-width image](/local/flat_tree.png){: width="400"}
-![Full-width image](/local/direct_light.png){: width="400"}
+![Full-width image](/assets/images/welcome-to-opengl/flat_tree.png){: width="400"}
+![Full-width image](/assets/images/welcome-to-opengl/direct_light.png){: width="400"}
 
 
 Finally, playing with OpenGL can be a great creative outlet. Even with very basic tool you create somewhat pleasing to look at images. For example, you can the tree model above, change the background from white to black, add a flat surface textured like grass and - the pinaccle of my OpenGL skill so far - add a point light. With a bit of imagination, you can imagine yourself sitting next to a fire under a tree on summer night. 
 
 
-<div style="text-align: center"><img src="/local/Hero_image2.png" width="400" /></div>
+<div style="text-align: center"><img src="/assets/images/welcome-to-opengl/Hero_image2.png" width="400" /></div>
 
 Conclusion 
 -----------
